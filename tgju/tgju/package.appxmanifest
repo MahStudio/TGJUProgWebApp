@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="45104MAHStudio.TGJU" Version="1.2.1.0" Publisher="CN=44988219-A722-4FA5-9335-1E47D73A1418" />
+  <mp:PhoneIdentity PhoneProductId="1ede14b6-af4d-4dfe-b895-4e1d1973f411" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>TGJU</DisplayName>
+    <PublisherDisplayName>MAH Studio</PublisherDisplayName>
+    <Logo>images\tiles\storelogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="http://web.tgju.org">
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="http://web.tgju.org" Type="include" WindowsRuntimeAccess="none" />
+      </uap:ApplicationContentUriRules>
+      <uap:VisualElements DisplayName="TGJU" Description="tgju" BackgroundColor="transparent" Square150x150Logo="images\tiles\Square150x150Logo.png" Square44x44Logo="images\tiles\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="images\tiles\Wide310x150Logo.png" Square71x71Logo="images\tiles\SmallTile.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="images\tiles\splashscreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+</Package>
